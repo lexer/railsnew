@@ -7,6 +7,8 @@
     /[if IE]
       = stylesheet_link_tag 'ie.css', :media => 'screen, projection'
     = javascript_include_tag :defaults
+    = javascript_include_tag "application"
+    = javascript_include_tag collect_javascript_files("views/**/*.js")
     = csrf_meta_tag
   %body
     = yield
