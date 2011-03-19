@@ -1,10 +1,10 @@
 App.namespace('App.views.foos.Index');
 App.views.foos.Index = (function () {
     // dependencies & private properties
-    var hello_text = 'Hello',
+    var helloText = 'Hello',
         helloContainer = null,
         onSayClicked = function () {
-            helloContainer.html(hello_text + $(this).data('name'));
+            helloContainer.html(helloText + $(this).data('name'));
         };
 
 

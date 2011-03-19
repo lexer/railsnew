@@ -6,10 +6,10 @@ module ApplicationHelper
   end
 
   def js_init
-    Haml::Engine.new(":javascript
-  $(function(){
-     App.views.#{controller_name}.#{action_name.titleize}.init();
-  });
-").render
+    Haml::Engine.new(
+      ":javascript
+        $(function(){
+           App.views.#{controller_name}.#{action_name.titleize}.init();
+        });").render
   end
 end
