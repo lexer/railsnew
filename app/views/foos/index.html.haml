@@ -1,5 +1,7 @@
 .hello
 %a.say{ :data => { :name => 'John'}}
   say
+.message
+= link_to "show message", { :controller => :foos, :action => :show, :id => 1 }, :remote => true
 
 = js_init
