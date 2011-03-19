@@ -5,7 +5,5 @@ class FoosController < ApplicationController
 
   def show
     @message = 'Recived with unobtrusive'
-
-    render :action => :show
   end
 end
